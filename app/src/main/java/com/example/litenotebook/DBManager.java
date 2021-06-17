@@ -38,19 +38,16 @@ public class DBManager {
     //CURSOR
     public Cursor fetch(){
 
+        SQLiteDatabase database = dbHelper.getReadableDatabase();
 
-        String[] columns={DatabaseHelper.ID,DatabaseHelper.SUBJECT,DatabaseHelper.DESC};
+        String selection = "SELECT * FROM " + DatabaseHelper.TABLE_NAME;
+        Cursor cursor1 = database.rawQuery(selection, null);
 
-        SQLiteDatabase database=dbHelper.getReadableDatabase();
-     //   String select=" SELECT * FROM " + DatabaseHelper.TABLE_NAME;
-      //  String sort=DatabaseHelper.ID+DatabaseHelper.SUBJECT;
-        Cursor cursor=database.query(DatabaseHelper.TABLE_NAME,columns,
-                null,null,null,null,null);
-        // Cursor cursor=database.rawQuery(DatabaseHelper.DB_NAME,columns);
-        if(cursor!=null){
-            cursor.moveToFirst();
+        if (cursor1 != null) {
+            cursor1.moveToFirst();
         }
-        return cursor;
+
+        return cursor1;
     }
 
     //updete
