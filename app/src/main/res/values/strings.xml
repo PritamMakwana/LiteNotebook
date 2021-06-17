@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lite Notebook</string>
+    <string name="add_note">Enter note</string>
+    <string name="add_title">Enter TItle...</string>
+</resources>

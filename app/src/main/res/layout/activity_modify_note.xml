@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ModifyNoteActivity">
+
+    <EditText
+        android:id="@+id/addtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/add_title"
+        android:inputType="textPersonName"
+        android:textColor="#A31818"
+        android:textColorHint="#A9EC2323"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addnote2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="68dp"
+        android:background="@null"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/add_note"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:maxLength="500"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="#1259E8"
+        android:textColorHint="#3F51B5"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtitle2" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addbtn2"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="44dp"
+        android:clickable="true"
+        app:backgroundTint="#C65A5A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
