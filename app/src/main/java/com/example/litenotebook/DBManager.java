@@ -10,9 +10,6 @@ public class DBManager {
     private DatabaseHelper dbHelper;
     private Context context;
     private SQLiteDatabase database;
-
-
-
     public DBManager(Context c) {
         context = c;
     }
@@ -20,7 +17,7 @@ public class DBManager {
     //open
     public DBManager open()  throws SQLException{
         dbHelper=new DatabaseHelper(context);
-        database=dbHelper.getWritableDatabase();
+//        database=dbHelper.getWritableDatabase();
         return this;
     }
     //close

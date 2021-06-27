@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LiteNotebook">
-        <activity android:name=".ModifyNoteActivity"></activity>
+        <activity android:name=".UpdeteNoteActivity"></activity>
+        <activity android:name=".ModifyNoteActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

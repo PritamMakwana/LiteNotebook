@@ -4,33 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A12525"
-    android:backgroundTint="#FFFFFF"
-    tools:context=".ModifyNoteActivity">
+    tools:context=".UpdeteNoteActivity">
 
     <ImageView
-        android:id="@+id/backimg"
+        android:id="@+id/backimg2"
         android:layout_width="50dp"
         android:layout_height="45dp"
         android:src="@drawable/back_erov"
-        app:layout_constraintBottom_toTopOf="@+id/addtitle2"
+        app:layout_constraintBottom_toTopOf="@+id/addtitle22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imgdelete"-->
-<!--        android:layout_width="50dp"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:src="@drawable/ic_baseline_delete_24"-->
-<!--        android:layout_margin="10dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/addtitle2"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+    <ImageView
+        android:id="@+id/imgdelete2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/addtitle22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
 
-        android:id="@+id/addtitle2"
+        android:id="@+id/addtitle22"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -39,8 +37,9 @@
         android:hint="@string/add_title"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColor="#131313"
-        android:textColorHint="#A9504E4E"
+        android:textColor="#042AFA"
+        android:textColorHighlight="#145EDF"
+        android:textColorHint="#6B8FD8"
         android:textColorLink="#131313"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -50,26 +49,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView22"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#5754BC"
         android:backgroundTint="#03BACD0F"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/addbtn2"
-        app:layout_constraintEnd_toEndOf="@+id/addnote2"
+        app:layout_constraintBottom_toTopOf="@+id/addbtn22"
+        app:layout_constraintEnd_toEndOf="@+id/addnote22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addtitle2" />
+        app:layout_constraintTop_toBottomOf="@+id/addtitle22" />
 
     <EditText
-        android:id="@+id/addnote2"
+        android:id="@+id/addnote22"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:background="@null"
         android:backgroundTint="#FFFFFF"
-        android:ems="20"
         android:hint="@string/add_note"
         android:inputType="textMultiLine"
         android:lines="1000"
@@ -80,29 +78,28 @@
         android:scrollbars="vertical"
         android:shadowColor="@color/purple_700"
         android:singleLine="false"
-        android:textColor="#505153"
-        android:textColorHint="#BDBDC1"
+        android:textColor="#2196F3"
+        android:textColorHint="#55A9B5"
         android:textColorLink="#FFFFFF"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView22"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addtitle2" />
+        app:layout_constraintTop_toBottomOf="@+id/addtitle22" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addbtn2"
+        android:id="@+id/addbtn22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:clickable="true"
-        app:backgroundTint="#C8C0C0"
+        android:src="@drawable/ic_baseline_add_task_24"
+        app:backgroundTint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_baseline_add_task_24"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
